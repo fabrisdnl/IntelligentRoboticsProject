@@ -5,10 +5,6 @@
 
 * **Daniele Fabris** [daniele.fabris.5@studenti.unipd.it](mailto:daniele.fabris.5@studenti.unipd.it)
 
-* **Arash Abdolhossein Pour Malekshash** [arash.abdolhosseinpourmalekshah@studenti.unipd.it](mailto:arash.abdolhosseinpourmalekshah@studenti.unipd.it)
-Did not contribute to the project development.
-
-
 # ASSIGNMENT 1
 
 ## Setting up the environment 
