@@ -1,0 +1,8 @@
+#goal definition
+geometry_msgs/Pose final_pose
+---
+#result definition
+geometry_msgs/Point[] obstacles
+---
+#feedback
+string status

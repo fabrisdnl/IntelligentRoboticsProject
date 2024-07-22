@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- ARGS -->
+    <arg name="world_name" value="ias_lab_room_full_tables"/>
+	<!-- server detection modality (<detection> or <detectionCV>) -->
+    <arg name="arg_server" default="detection"/>
+
+    <!-- LAUNCH FILES -->
+    <include file="$(find tiago_iaslab_simulation)/launch/start_simulation.launch">
+        <arg name="world_name" value="$(arg world_name)"/>
+    </include>
+
+    <include file="$(find tiago_iaslab_simulation)/launch/apriltag.launch"/>
+    <include file="$(find tiago_iaslab_simulation)/launch/navigation.launch"/>
+
+    <!-- NODES -->
+    <node name ="human_node" pkg="tiago_iaslab_simulation" type="human_node"/>
+    
+    <node name ="server_tiago" pkg="assignment_1" type="server_tiago" args="$(arg arg_server)"/>
+    
+    <node name ="node_A" pkg="assignment_2" type="node_A"/>
+    <node name ="node_B" pkg="assignment_2" type="node_B"/>
+    <node name ="node_C" pkg="assignment_2" type="node_C"/>    
+
+</launch>

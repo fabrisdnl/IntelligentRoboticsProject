@@ -1,0 +1,17 @@
+#goal definition
+bool picking
+bool placing
+int32 ID
+float32 size
+geometry_msgs/Pose pose
+int32[] objects_ID
+float32[] objects_size
+geometry_msgs/Pose[] objects_pose
+geometry_msgs/Point cylinder
+float32 height_place
+---
+#result definition
+float32 height_pick
+---
+#feedback
+string status

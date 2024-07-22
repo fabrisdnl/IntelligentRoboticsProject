@@ -1,0 +1,15 @@
+#goal definition
+int32 ID
+float32 hj1
+float32 hj2
+---
+#result definition
+int32 ID
+float32 size
+geometry_msgs/Pose pose
+int32[] objects_ID
+float32[] objects_size
+geometry_msgs/Pose[] objects_pose
+---
+#feedback
+string status
